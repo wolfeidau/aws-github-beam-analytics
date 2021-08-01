@@ -1,0 +1,11 @@
+name: Java Tests
+
+jobs:
+  java_unit_tests:
+    name: 'Java Unit Tests'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run tests
+        command: mvn test
